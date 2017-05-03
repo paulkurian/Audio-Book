@@ -26,7 +26,7 @@ def audiobook(E1,E2,E3,E4):
                 word=word.replace("/n",'')
             for i in range (l):
                 if word.find(lis[i])!=-1:
-                    word=word.replace(lis[i],'beeeeeeeeeeep')
+                    word=word.replace(lis[i],'beeee eeee eeep')
             
             lines1=lines1+" "+word
     
