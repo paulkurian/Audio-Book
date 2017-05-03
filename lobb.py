@@ -12,10 +12,9 @@ def audiobook(E1,E2,E3,E4):
     engine.setProperty('rate', rate+e1)
     voices = engine.getProperty('voices')
     engine.setProperty('voice', voices[e2].id)
-    text_file = open(e3, "r")
+    text_file = open("fresh.txt.txt", "r")
     lines = text_file.readlines()
     lines1=''
-    
     lis=e4.split()
     l=len(lis)
     for i in range (l):
@@ -23,29 +22,17 @@ def audiobook(E1,E2,E3,E4):
     for line in lines:
         for word1 in line.split():
             word=word1.lower()
-            if word=="/n":
-                word=''
-            
-            try:
-                word.decode('ascii')
-            except UnicodeDecodeError:
-                for c in word:
-                    try:
-                        c.decode('ascii')
-                    except UnicodeDecodeError:
-                        word=word.replace(c,"")
-                    
+            if word.find("/n")!=-1:
+                word=word.replace("/n",'')
             for i in range (l):
                 if word.find(lis[i])!=-1:
                     word=word.replace(lis[i],'beeee eeee eeep')
             
             lines1=lines1+" "+word
-         
-            
     
 
 
-    print lines1
+
     engine.say(lines1)
     engine.runAndWait()
     
