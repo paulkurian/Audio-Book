@@ -21,6 +21,7 @@ choice onto Notepad and save the file in the same folder as the AMP_Reader file.
 What libraries/packages do you need installed to run this code?
 You will need to install the pywin 32 package for python 2.7. In order to install of all the libraries in this package you will 
 need to install “pypiwin32” on your computer (Try “pip install pypiwin32”)
+This code also uses the Tkinter library that is already preinstalled on Python 2.7
  
  
 What operating system/Python version does this work on?
