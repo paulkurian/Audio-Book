@@ -14,7 +14,7 @@ What does each file in the folder do?
 1. AMP Reader
 This is the main Python file: It has all the code on which the project runs.
 
-2. getty.txt, comedown.txt, CS101.txt, fresh.txt are some sample text files we thought you could try our platform on, 
+2. getty.txt, comedown.txt, barun.txt, fresh.txt are some sample text files we thought you could try our platform on, 
 but we really encourage you to try it on any text file of your choice. All you have to do is copy the text of your 
 choice onto Notepad and save the file in the same folder as the AMP_Reader file. 
 
